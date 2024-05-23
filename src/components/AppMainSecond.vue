@@ -6,7 +6,7 @@
 <template>
     <div class="contenitore">
         <div class="d-flex" style="height: 100%;">
-            <div class="single-card">
+            <div class="single-card align-middle">
                 card singola
             </div>
             <div class="single-card">
@@ -37,5 +37,6 @@
     border: solid 1px black;
     text-align: center;
     height: 100%;
+    align-content: center;
 }
 </style>
