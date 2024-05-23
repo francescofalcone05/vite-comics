@@ -13,15 +13,15 @@ export default {
 </script>
 
 <template>
-  <div class="header-section">
+  <header class="header-section">
     <AppHeader />
-  </div>
-  <div class="main-section">
+  </header>
+  <main class="main-section">
     <AppMain />
-  </div>
-  <div class="footer-section">
+  </main>
+  <footer class="footer-section">
     <AppFooter />
-  </div>
+  </footer>
 
 </template>
 
