@@ -34,7 +34,6 @@ export default {
 }
 
 .main-section {
-  background-color: red;
   width: 100%;
   margin: 0;
   height: calc(100vh - 10rem);
