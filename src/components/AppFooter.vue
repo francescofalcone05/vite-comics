@@ -13,7 +13,7 @@ export default {
     },
     methods : {
         getImg(path) {
-            let risultato = new URL("../assets/img/" + path, import.meta.url);
+            let risultato = new URL(`../assets/img/` + path, import.meta.url);
             return risultato.href;
         }
     }
