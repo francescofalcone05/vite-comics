@@ -36,7 +36,6 @@ export default {
 .main-section {
   width: 100%;
   margin: 0;
-  height: calc(100vh - 10rem);
 }
 
 .footer-section {

@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
 .first-section {
-    height: 5rem;
+    min-height: 5rem;
     background-color: black;
 }
 
@@ -37,7 +37,7 @@ export default {
 }
 
 .third-section {
-    height: calc(100% - 10rem);
-    background-image: url(../../img/footer-bg.jpg);
+    height:20rem;
+    background-image: url(../assets/img/footer-bg.jpg);
 }
 </style>

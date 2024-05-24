@@ -13,9 +13,16 @@ export default {
         'FANS',
         'NEWS',
         'SHOP'
-      ]
+      ],
+      logo: 'dc-logo.png'
     }
-  }
+  },
+  methods : {
+        getImg(path) {
+            let risultato = new URL("../assets/img/" + path, import.meta.url);
+            return risultato.href;
+        }
+    }
 }
 
 </script>
@@ -27,7 +34,7 @@ export default {
 
       <div class="col-4 align-content-center">
         <div style="width: 10%;">
-          <img src="../../img/dc-logo.png" alt="" style="width: 100%;">
+          <img :src="getImg(logo)" alt="" style="width: 100%;">
         </div>
       </div>
 

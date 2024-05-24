@@ -69,7 +69,7 @@ export default {
                     </ul>
                 </div>
             </div>
-            <div class="right-side " style="width: 50%;">
+            <div class="right-side " style="width: 60%;">
 
             </div>
         </div>
@@ -103,7 +103,7 @@ li {
 }
 
 .right-side {
-    background-image: url(../../img/dc-logo-bg.png);
+    background-image: url(../assets/img/dc-logo-bg.png);
     background-repeat: no-repeat;
     background-position: right;
 }

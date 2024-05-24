@@ -3,12 +3,18 @@ export default {
     data() {
         return {
             socialIcons: [
-                '../../img/footer-facebook.png',
-                '../../img/footer-twitter.png',
-                '../../img/footer-youtube.png',
-                '../../img/footer-pinterest.png',
-                '../../img/footer-periscope.png',
+                'footer-facebook.png',
+                'footer-twitter.png',
+                'footer-youtube.png',
+                'footer-pinterest.png',
+                'footer-periscope.png',
             ]
+        }
+    },
+    methods : {
+        getImg(path) {
+            let risultato = new URL("../assets/img/" + path, import.meta.url);
+            return risultato.href;
         }
     }
 }
@@ -27,7 +33,7 @@ export default {
             </div>
             <div class="right-side align-content-center" style="width: 30%;">
                 <span class="me-3 text-primary">FOLLOW US</span class="me-2">
-                <img v-for="immagine in socialIcons" :src="immagine" alt="">
+                <img v-for="immagine in socialIcons" :src="getImg(immagine)" alt="">
             </div>
         </div>
 

@@ -6,25 +6,31 @@ export default {
             otherPages: [
                 {
                     text: 'DIGITAL COMICS',
-                    immagine: '../../img/buy-comics-digital-comics.png'
+                    immagine: 'buy-comics-digital-comics.png'
                 },
                 {
                     text: 'DC MERCHANDISE',
-                    immagine: '../../img/buy-comics-merchandise.png'
+                    immagine: 'buy-comics-merchandise.png'
                 },
                 {
                     text: 'SUBSCRIPTION',
-                    immagine: '../../img/buy-comics-subscriptions.png'
+                    immagine: 'buy-comics-subscriptions.png'
                 },
                 {
                     text: 'COMIC SHOP LOCATOR',
-                    immagine: '../../img/buy-comics-shop-locator.png'
+                    immagine: 'buy-comics-shop-locator.png'
                 },
                 {
                     text: 'DC POWER VISA',
-                    immagine: '../../img/buy-dc-power-visa.svg'
+                    immagine: 'buy-dc-power-visa.svg'
                 }
             ]
+        }
+    },
+    methods : {
+        getImg(path) {
+            let risultato = new URL("../assets/img/" + path, import.meta.url);
+            return risultato.href;
         }
     }
 }
@@ -38,7 +44,7 @@ export default {
             <template v-for="page in otherPages">
                 <div class="single-card d-flex justify-content-center py-4">
                     <div class="align-content-center">
-                        <img :src="page.immagine" alt="">
+                        <img :src="getImg(page.immagine)" alt="">
                     </div>
                     <div class="align-content-center px-2 my_fs">
                         {{ page.text }}
