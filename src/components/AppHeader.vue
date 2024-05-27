@@ -17,12 +17,12 @@ export default {
       logo: 'dc-logo.png'
     }
   },
-  methods : {
-        getImg(path) {
-            let risultato = new URL(`../assets/img/` + path, import.meta.url);
-            return risultato.href;
-        }
+  methods: {
+    getImg(path) {
+      let risultato = new URL(`../assets/img/${path}`, import.meta.url);
+      return risultato.href;
     }
+  }
 }
 
 </script>
